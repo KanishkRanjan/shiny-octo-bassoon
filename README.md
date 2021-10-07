@@ -1,3 +1,3 @@
 # shiny-octo-bassoon
-Just for fun
+It's just a form in with Kanishk tag without using the default given with HTMl5
 ![name-of-you-image](https://github.com/KanishkRanjan/shiny-octo-bassoon/blob/main/Screenshot%202021-10-07%20201353.jpg)
