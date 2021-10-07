@@ -1,0 +1,208 @@
+html {
+    font-size: 10px;
+    /* Set to 10px for easy calculations */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    /* background-color: black; */
+    background-image: url(./assert/ba.jpg);
+    /* filter: blur(8px); */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.form-container
+{
+    margin-left:auto ;
+    margin-right: auto;
+    background-color: aliceblue;
+    width: 80vw;
+    height:85vh;
+    border-radius: 2.5px;
+    display: flex;
+}
+.form-image
+{
+    /* background-color: aqua; */
+    width: 50%;
+    display: flex;
+}
+
+.form-image img
+{
+    /* height: auto; */
+    width: 100%;
+}
+
+
+.form-detail
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0 5%;
+    /* background-color: orange; */
+}
+
+.form-detail p.title{
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25px;
+}
+
+.form-detail p.body
+{
+    font-size: 1.5rem;
+    max-width: 70%;
+    text-align: center;
+}
+
+/* the real works start for here */
+
+
+kanishk 
+{
+    /* background-color: orange; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+kanin
+{
+    width: 70%;
+    height: 35px;
+    display: block;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 14px;
+    /* margin-top: 15px; */
+    color: rgb(134, 134, 134);
+    padding:33px 5px;
+
+    /* background-color: blue; */
+}
+
+kanin[type="text"],kanin[type="number"]
+{
+    border-bottom: 2px solid rgb(195, 195, 195);
+    border-radius: .5px;
+}
+
+kanin[type="text"].active,kanin[type="number"].active
+{
+    border-color: rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+}
+kanishk .radio-container
+{
+    display: flex;
+
+    width: 70%;
+    
+}
+
+kanin[type="radio"]
+{
+    /* color: rgb(47, 47, 47); */
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+radio {
+    /* display: block; */
+    position: relative;
+    height: 15px;
+    width: 15px;
+    /* background-color: black; */
+    /* padding-left: 21px; */
+    border:3px solid rgb(134, 134, 134);
+    border-radius: 50%;
+    margin-right: 5px;
+
+    
+}
+kanin.active radio::after
+{
+    content: ".";
+    position: absolute;
+    top:-41px;
+    left: -2px;
+    font-size: 50px;
+
+}
+
+kanin[type="radio"].inactive:hover radio
+{
+    color: #25b36c;
+    border-color: #25b36c;
+}
+
+kanin[type="radio"]:hover
+{
+    color: #000;
+}
+kanin[type="radio"].active 
+{
+    color: black;
+
+}
+kanin[type="radio"] a 
+{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+
+}
+kanin[type="radio"].active radio
+{
+    border-color: #000;
+}
+
+
+kanin[type="submit"]
+{
+    background-color: rgb(0, 170, 57);
+    padding: 7px 24px;
+    color: #fff;
+    max-width: 100px;
+    margin-top: 50px;
+    /* margin-right: auto; */
+    border-radius: 2px;
+}
+
+kanin.incorrect
+{
+    border-color: rgb(255, 141, 141);
+    color: rgb(255, 141, 141);
+}
+
+#blinker
+{
+    font-size: 24px;
+    color:rgb(128, 128, 128);
+}
+#filler
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    position: absolute;
+    top: 0;left: 0;
+}

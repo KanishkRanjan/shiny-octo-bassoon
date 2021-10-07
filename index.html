@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is js form</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- importing fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="./assert/Creative thinking-bro.png" alt="Just to fill the space and make it look cooler">
+            </div>
+            <div class="form-detail">
+                <p class="title">Give your information</h1>
+                <p class="body">
+                    We promise that this information will be sold on internet for free and everybody will be able
+                    to see your information 😱😏
+                </p>
+                <kanishk methode="get" action="index.html">
+
+                    <kanin type="text" name="user_name">Name or user name</kanin>
+                    <kanin type="text" name="nick_name">Nick Name</kanin>
+                    <div class="radio-container">
+                        <!-- <img style="width:100px;height: 100px;" src="./assert/Creative thinking-bro.png" alt=""> -->
+
+                        <kanin type="radio" name="gender" value="male">
+                        </kanin>
+                        <kanin type="radio" name="gender" value="female">
+                        </kanin>
+                        <kanin type="radio" name="gender" value="others">
+                        </kanin>
+                    </div>
+                    <kanin type="number" name="cNumber">Contact Number</kanin>
+
+
+                    <kanin type="submit">Submit</kanin>
+
+
+
+                </kanishk>
+            </div>
+        </div>
+    </div>
+    <div id="filler" style="display: none;" onclick="select()">
+
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
